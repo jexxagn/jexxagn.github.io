@@ -500,7 +500,10 @@
                 infoBox.classList.add('hide');
             }, 3000); // 3秒后隐藏
         }
-
+//验证移动电话        
+ function isValidPhoneNumber(phoneNumber){
+          const regex =/^1[345789]\d{9}$/;
+          return regex.test(phoneNumber);}
         // 通知车主
         function notifyOwnerWithCustomMessage() {
             const currentTime = Date.now();
@@ -513,7 +516,18 @@
             }
 
             const customMessage = document.getElementById('customMessage').value.trim();
-            const messageToSend = customMessage.length > 0 ? customMessage : "您好，有人需要您挪车，请及时处理。";
+              //在大神给的代码，修改增加的地方
+                        if (customMessage.length > 0){
+                                        if(        isValidPhoneNumber(customMessage)==false){
+                                         showInfoBox('error', `请输入能够联系到您的手机号通知车主。`);      
+                                  return;
+                                }};
+                        //showInfoBox('error',isValidPhoneNumber(customMessage))
+        
+                
+            const messageToSend= customMessage.length > 0 ? "手机号为"+customMessage+"需要您挪车，请及时处理。" : "您好，有人需要您挪车，请及时处理。";
+ 
+            //const messageToSend = customMessage.length > 0 ? customMessage : "您好，有人需要您挪车，请及时处理。";
 
             showInfoBox('success', '正在通知车主...');
 
