@@ -473,8 +473,8 @@
         let isDarkMode = false;
         let lastNotificationTime = 0; // 记录上次通知的时间
         const mstime = 1000;//1000代表1秒，通知间隔时间
-        const phone = '10086';
 	const titleToSend = '挪车提醒';
+	const phone = '10086';
 	const dekey ='nSTyyXku2RfA7JTWAwvC3Q';
         // 切换夜间模式
         function toggleDarkMode() {
@@ -535,14 +535,15 @@
             setTimeout(() => {
                 notifyOwner(messageToSend);
                 lastNotificationTime = Date.now(); // 更新上次通知时间
-            }, 2000);  // 延迟2秒，模拟通知过程
+            }, 3000);  // 延迟2秒，模拟通知过程
         }
 
         function notifyOwner(messageToSend) {
             const bodyContent = {
-                title: `${titleToSend}`,
-                body: `${messageToSend}`, 
+		title: `${titleToSend}`,
+		body: `${messageToSend}`, 
 		isArchive: 1,
+		copy: number,
 		device_key: dekey
             };
 
