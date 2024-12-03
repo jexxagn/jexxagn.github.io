@@ -506,8 +506,8 @@
         // 通知车主
         function notifyOwnerWithCustomMessage() {
             const currentTime = Date.now();
-            if (currentTime - lastNotificationTime < ${mstime}) { // 检查是否达到2分钟限制
-                const remainingTime = ${mstime} - (currentTime - lastNotificationTime);
+            if (currentTime - lastNotificationTime < mstime) { // 检查是否达到2分钟限制
+                const remainingTime = mstime - (currentTime - lastNotificationTime);
                 const minutes = Math.floor(remainingTime / 60000);
                 const seconds = Math.floor((remainingTime % 60000) / 1000);
                 showInfoBox('error', `请等待 ${minutes} 分 ${seconds} 秒 后再通知车主。`);
