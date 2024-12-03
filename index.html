@@ -472,7 +472,7 @@
     <script>
         let isDarkMode = false;
         let lastNotificationTime = 0; // 记录上次通知的时间
-        const mstime = 1000;//1000代表1秒，通知间隔时间
+        const mstime = 60000;//1000代表1秒，通知间隔时间
 	const titleToSend = '挪车提醒';
 	//const phone = '123456';//手机号码
 	//const dekey ='abcdefg';//bark key
@@ -536,7 +536,7 @@
             setTimeout(() => {
                 notifyOwner(messageToSend);
                 lastNotificationTime = Date.now(); // 更新上次通知时间
-            }, 3000);  // 延迟2秒，模拟通知过程
+            }, 3000);  // 延迟3秒，模拟通知过程
         }
 
         function notifyOwner(messageToSend) {
@@ -555,7 +555,7 @@
             .then(response => response.json())
             .then(data => {
                 if (data.code === 200) {
-                    showInfoBox('success', '已成功通知车主前来挪车，请稍后等待！');
+                    showInfoBox('success', '已成功通知车主前来挪车，请稍作等待！');
                 } else {
                     showInfoBox('error', `通知发送失败: ${data.msg || '未知错误'}`);
                 }
