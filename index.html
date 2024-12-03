@@ -472,10 +472,10 @@
     <script>
         let isDarkMode = false;
         let lastNotificationTime = 0; // 记录上次通知的时间
-        const mstime = 120000;//1000代表1秒，通知间隔时间
+        const mstime = 1000;//1000代表1秒，通知间隔时间
         const phone = '10086';
-		const titleToSend = '挪车提醒';
-		const dekey ='nSTyyXku2RfA7JTWAwvC3Q';
+	const titleToSend = '挪车提醒';
+	const dekey ='nSTyyXku2RfA7JTWAwvC3Q';
         // 切换夜间模式
         function toggleDarkMode() {
             isDarkMode = !isDarkMode;
@@ -552,7 +552,7 @@
             })
             .then(response => response.json())
             .then(data => {
-                if (data.code === 1000) {
+                if (data.code === 200) {
                     showInfoBox('success', '已成功通知车主前来移车，请稍后等待！');
                 } else {
                     showInfoBox('error', `通知发送失败: ${data.msg || '未知错误'}`);
