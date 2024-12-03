@@ -541,8 +541,11 @@
         function notifyOwner(messageToSend) {
             const bodyContent = {
                 title: `${titleToSend}`,
-                body: `${messageToSend}`,               
-				device_key: dekey
+                body: `${messageToSend}`, 
+		isArchive: 1,
+		level: active,
+		copy: body,
+		device_key: dekey
             };
 
             fetch("https://api.day.app/push", {
