@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>通知车主挪车</title>
+	<link href="style.css" rel="stylesheet" type="text/css">	
+</head>
+<body>
+	<div class="container">
+		<h1>通知车主挪车</h1>
+		<div class="tel-container">
+			<input type="tel" id="customMessage" placeholder="请输入手机号，方便车主联系您！">
+		</div>
+		<div class="button-group">
+			<button class="notify-btn" id="notifyBtn" onclick="notifyOwnerWithCustomMessage()">通知车主</button>
+			<div class="call-btn-container" id="callBtnContainer">
+				<span class="call-btn-text">向右滑动拨打电话</span>
+				<div class="call-btn-slider" id="callBtnSlider"></div>
+				<span class="arrow-left">←</span>
+				<span class="arrow-right">→</span>
+			</div>
+		</div>
+	</div>
+	<button class="toggle-dark-mode-btn" onclick="toggleDarkMode()">🌙</button>
+	<div class="info-box" id="infoBox">
+		<span class="close-btn" onclick="closeInfoBox()">×</span>
+		<div class="icon" id="infoBoxIcon"></div>
+		<div class="message" id="infoBoxMessage"></div>
+	</div>
+    <script type="text/javascript" src="main.js" language="javascript"></script>
+</body>
+</html>
