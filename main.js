@@ -1,6 +1,6 @@
 let isDarkMode = false;
 let lastNotificationTime = 0; // 记录上次通知的时间
-const mstime = 3000; //1000代表1秒，通知间隔时间
+const mstime = 120000; //1000代表1秒，通知间隔时间
 const titleToSend = '挪车提醒';
 //const phone = '123456'; //手机号码
 //const dekey = 'abcdefg'; //bark key
