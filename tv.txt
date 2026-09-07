@@ -112,6 +112,7 @@ CGTN英语,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225745/index.m
 吉林卫视,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225792/index.m3u8
 吉林卫视,https://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/jilin/1000/index.m3u8?msisdn=7e2249914f9c70b8599429445fc27647&mdspid=&spid=600633&netType=0&sid=5910022164&pid=2028597139&timestamp=20260907183944&Channel_ID=0128_20090000-99900-101700010110112&ProgramID=947472500&ParentNodeID=-99&assertID=5910022164&client_ip=110.42.50.152&SecurityKey=20260907183944&promotionId=&mvid=5900004357&mcid=500020&playurlVersion=WX-A1-9.8.2-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_chezai&bean=mgspchezai&tid=chezaitid&conFee=0&puData=cb672db5194f7af06d9ec17fdd6f44b6&ddCalcu=6cbbe460477f206ddbd5f17914cfe79adf60
 山西卫视,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225763/index.m3u8
+山西卫视,https://livehhhttps.sxrtv.com/lsdream/q8RVWgs/1000/w5sh8sV.m3u8
 云南卫视,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225751/index.m3u8
 云南卫视,http://audiovisual.yun.gehua.net.cn:8088/live/ipcdn/YunNanHD/ipcdn,YunNanHD_1200K_live.m3u8?tvid=0&authNum=1788785930-0-84cf9c802752128fdad1d5c1b8c18a92
 河南卫视,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225767/index.m3u8
